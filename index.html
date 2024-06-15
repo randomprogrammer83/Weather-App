@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="weather.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Whether App</title>
+  </head>
+  <body style="background-color: #313131">
+    <div class="container">
+      <h2>Weather App</h2>
+      <div class="header">
+        <input type="text" placeholder="Enter the City Name" class="inp" />
+        <button
+          type="button"
+          class="fa-solid fa-magnifying-glass add"
+          id="btn"
+        ></button>
+      </div>
+      <div class="location-not-found">
+        <h1>Sorry, Location not found!!!</h1>
+        <img src="404.png" alt="404 Error" />
+      </div>
+      <div class="weather-body">
+        <div class="img-sec">
+          <img src="snow.png" alt="image" class="img" />
+
+          <div class="bottm">
+            <h2 class="temp">20°C</h2>
+            <p
+              class="description"
+              style="text-transform: capitalize; font-weight: 600"
+            >
+              Description
+            </p>
+          </div>
+          <div class="weather-details">
+            <div class="humidity">
+              <i class="fa-sharp fa-solid fa-droplet"></i>
+              <div class="text">
+                <span id="humidity">45%</span>
+                <p>Humidity</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>
+              <div class="text">
+                <span id="wind_speed">12Km/H</span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
